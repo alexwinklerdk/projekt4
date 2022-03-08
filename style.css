@@ -12,6 +12,7 @@
 
     --fs-h1:   68px;
     --fs-h2:   44px;
+    --fs-nav: 20px;
 }
 
 *{
@@ -22,6 +23,8 @@
 }
 header{
     background-color: var(--clr-header);
+    font-size: var(--fs-nav);
+    font-family: var(--ff-primary);
 }
 
 li{
@@ -53,7 +56,7 @@ a{
 }
 
 .nav-link:hover{
-    color: dodgerblue;
+    color:var(--clr-font);
 }
 
 .hamburger{
