@@ -5,11 +5,11 @@
     --fw-reg:  300;
     --fx-bold: 900;
 
-    ---clr--background:  #E5E5E5;   /*grey*/
-    --clr-dark:   #42464C;   /*charcoal*/
-    --clr-accent: #E5E1DC;   /*platinium*/
-    --clr-base:   #FEEEEB;   /*lavenderblush*/
-    --clr-brown:  #684E3B;   /*coffee*/
+    ---clr--background:  #E5E5E5;
+    --clr-font:   #332F2C;   
+    --clr-accent: #E5E1DC;   
+    --clr-base:   #FEEEEB;   
+    --clr-brown:  #684E3B;   
 
     --fs-h1:   68px;
     --fs-h2:   44px;
