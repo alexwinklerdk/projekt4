@@ -1,0 +1,18 @@
+:root{
+    --ff-primary: 'Roboto Slab', sarif;
+    --ff-secondary: 'Montserrat', sarif;
+
+    --fw-reg:  300;
+    --fx-bold: 900;
+
+    --clr-light:  #CBB5A4;   /*khaki*/
+    --clr-dark:   #42464C;   /*charcoal*/
+    --clr-accent: #E5E1DC;   /*platinium*/
+    --clr-base:   #FEEEEB;   /*lavenderblush*/
+    --clr-brown:  #684E3B;   /*coffee*/
+
+    --fs-h1:   68px;
+    --fs-h2:   44px;
+    --fs-h3:   19px;
+    --fs-body: 18px;
+}
