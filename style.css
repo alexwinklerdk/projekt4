@@ -107,4 +107,15 @@ a{
     .nav-menu.active{
         left: 0;
     }}
-/* menubar css *
+/*menubar css */
+
+h1 {
+padding: 0;
+text-align: center;
+margin:auto;
+margin-top: 2%;
+width: auto;
+color:var(--clr-font);
+font-family: var(--ff-primary);
+}
+
