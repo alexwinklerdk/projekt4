@@ -1,6 +1,6 @@
 :root{
-    --ff-primary: 'Roboto Slab', sarif;
-    --ff-secondary: 'Montserrat', sarif;
+    --ff-primary: 'Roboto Slab';
+    --ff-secondary: 'Montserrat';
 
     --fw-reg:  300;
     --fx-bold: 900;
@@ -12,7 +12,7 @@
 
     --fs-h1:   68px;
     --fs-h2:   44px;
-    --fs-nav: 20px;
+    --fs-nav:  20px;
 }
 
 /* menubar css */
