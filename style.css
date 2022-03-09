@@ -124,8 +124,8 @@ font-family: var(--ff-primary);
     grid-template-areas:
      'a'
      'b'
+     'c'
      'd'
-     'f'
-     'h'
-     'j';
+     'e'
+     'f';
     }
