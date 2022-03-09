@@ -95,7 +95,7 @@ a{
         flex-direction: column;
         background-color: var(--clr-header);
         width: 100%;
-        opacity: 90%;
+        opacity: 95%;
         text-align: center;
         transition: 0.3s;
     }
