@@ -124,8 +124,16 @@ font-family: var(--ff-primary);
     grid-template-areas:
      'a'
      'b'
+     'c'
      'd'
-     'f'
-     'h'
-     'j';
+     'e'
+     'f';
     }
+
+.grid1{grid-area: a;}
+.grid2{grid-area: b;}
+.grid3{grid-area: c;}
+.grid4{grid-area: d;}
+.grid5{grid-area: e;}
+.grid6{grid-area: f;}
+
