@@ -119,3 +119,14 @@ color:var(--clr-font);
 font-family: var(--ff-primary);
 }
 
+.gridevents{
+    display:grid;
+    grid-template-areas:
+     'a'
+     'b'
+     'd'
+     'f'
+     'h'
+     'j'
+     'l';
+    }
