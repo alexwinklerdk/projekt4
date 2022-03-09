@@ -1,6 +1,6 @@
 :root{
-    --ff-primary: 'Roboto Slab', sarif;
-    --ff-secondary: 'Montserrat', sarif;
+    --ff-primary: 'Roboto Slab';
+    --ff-secondary: 'Montserrat';
 
     --fw-reg:  300;
     --fx-bold: 900;
@@ -12,7 +12,7 @@
 
     --fs-h1:   68px;
     --fs-h2:   44px;
-    --fs-nav: 20px;
+    --fs-nav:  20px;
 }
 
 /* menubar css */
@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 header{
-    background-color: #DE7B1F;
+    background-color: var(--clr-header);
 }
 
 li{
@@ -30,7 +30,7 @@ li{
 }
 
 a{
-    color: #FFFFFF;
+    color: var(--clr-boxbg);
     text-decoration: none;
     font-family: var(--ff-primary);
 }
@@ -55,7 +55,7 @@ a{
 }
 
 .nav-link:hover{
-    color: #332F2C;
+    color: var(--clr-font);
 }
 
 .hamburger{
@@ -93,7 +93,7 @@ a{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #DE7B1F;
+        background-color: var(--clr-header);
         width: 100%;
         opacity: 80%;
         text-align: center;
