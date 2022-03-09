@@ -137,3 +137,7 @@ font-family: var(--ff-primary);
 .grid5{grid-area: e;}
 .grid6{grid-area: f;}
 
+#fastelavn{
+width: 389px;
+height: 266px;
+}
