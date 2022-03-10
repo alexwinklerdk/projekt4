@@ -15,6 +15,15 @@
     --fs-nav:  20px;
 }
 
+body {
+    background-color:var(--clr--background)
+}
+
+.box1 {
+    background-color: white;
+    margin-top: 40px;
+}
+
 /* menubar css */
 *{
     padding: 0;
@@ -109,6 +118,8 @@ a{
     }}
 /*menubar css */
 
+/* event side */
+
 h1 {
 padding: 2%;
 text-align: center;
@@ -122,21 +133,25 @@ font-size: var(--fs-h1);
 
 .gridevents{
     display:grid;
+    grid-template-columns: auto;
     grid-template-areas:
      'a'
      'b'
      'c'
      'd'
-     'e'
-     'f';
+     'e';
     }
 
-.grid1{grid-area: a;}
-.grid2{grid-area: b;}
+.grid1{
+    grid-area: a;
+}
+.grid2{
+    grid-area: b;
+}
 .grid3{grid-area: c;}
 .grid4{grid-area: d;}
 .grid5{grid-area: e;}
-.grid6{grid-area: f;}
+
 
 #fastelavn{
 display: block;
@@ -206,6 +221,19 @@ h4{
 }
 
 #filmaftentekst{
+    text-align: center;
+    font-family: var(--ff-secondary);
+}
+
+#afstemningsknap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
+    height: 73px;
+}
+
+#afstemningsknaptekst{
     text-align: center;
     font-family: var(--ff-secondary);
 }
