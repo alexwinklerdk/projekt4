@@ -177,3 +177,8 @@ h3{
     color:var(--clr-font);
     font-family: var(--ff-primary);
 }
+
+#beerpongtekst{
+    text-align: center;
+    font-family: var(--ff-secondary);
+}
