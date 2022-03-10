@@ -144,3 +144,18 @@ margin-right: auto;
 width: 389px;
 height: 266px;
 }
+
+h2{
+    padding: 0%;
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+    width: auto;
+    color:var(--clr-font);
+    font-family: var(--ff-primary);
+}
+
+#eventtekst{
+text-align: center;
+font-family: var(--ff-secondary);
+}
