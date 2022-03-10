@@ -248,17 +248,16 @@ h4{
     position: relative;
     height: 600px;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .carousel__image{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     position: relative;
 }
 
 .carousel__track-container{
-    background: var(--clr--background);
     height: 100%;
     padding: 10px;
 }
@@ -293,63 +292,25 @@ h4{
     right: -40px; 
 }
 
-carousel__button img{
+.carousel__button .img{
     width: 12px; 
 }
 
-/* info */
-#banner {
-    height: 200px;
-    width: auto;
-    margin-left:auto;
-    margin-right: auto;
-    background-size: contain;
-    background-image: url(images/beerbox-logo-vector.png);
-    background-repeat: no-repeat;
-    background-position: center;
-      padding-bottom: 25px;
-  }
+.carousel__nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
 
-  .tekstboks {
-    width: auto;
-    height: auto;
-    margin-left:auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 40%);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font: var(--ff-secondary);
-    font-size: var(--fs-h2);
-    font-style: var(--clr-font);
-    text-align: center;
-  }
+.carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: black;
+    margin: 0 12px;
+}
 
-  .tekstboks2 {
-    width: auto;
-    height: auto;
-    margin-left:auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 40%);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color:var(--clr-font);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-h1);
-    text-align: center;
-    font-weight: var(--fx-bold);
-  }
-
-  .tekstboks3 {
-    width: auto;
-    height: auto;
-    margin-left:auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 40%);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font: var(--ff-secondary);
-    font-size: var(--fs-h2);
-    font-style: var(--clr-font);
-    text-align: center;
-    font-weight: var(--fx-bold);
-  }
+.carousel__indicator .current-slide{
+    background: rgba(0,0,0,.3);
+}
