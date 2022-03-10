@@ -110,10 +110,10 @@ a{
 /*menubar css */
 
 h1 {
-padding: 0;
+padding: 2%;
 text-align: center;
-margin:auto;
-margin-top: 2%;
+margin: 0;
+margin-top: 3%;
 width: auto;
 color:var(--clr-font);
 font-family: var(--ff-primary);
@@ -138,6 +138,9 @@ font-family: var(--ff-primary);
 .grid6{grid-area: f;}
 
 #fastelavn{
+display: block;
+margin-left: auto;
+margin-right: auto;
 width: 389px;
 height: 266px;
 }
