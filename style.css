@@ -10,8 +10,8 @@
     --clr-boxbg: #FFFFFF; 
     --clr-header: #DE7B03;   
 
-    --fs-h1:   68px;
-    --fs-h2:   44px;
+    --fs-h1:   34px;
+    --fs-h2:   20px;
     --fs-nav:  20px;
 }
 
@@ -117,6 +117,7 @@ margin-top: 3%;
 width: auto;
 color:var(--clr-font);
 font-family: var(--ff-primary);
+font-size: var(--fs-h1);
 }
 
 .gridevents{
@@ -153,6 +154,7 @@ h2{
     width: auto;
     color:var(--clr-font);
     font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
 }
 
 #eventtekst{
@@ -176,9 +178,34 @@ h3{
     width: auto;
     color:var(--clr-font);
     font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
 }
 
 #beerpongtekst{
+    text-align: center;
+    font-family: var(--ff-secondary);
+}
+
+#filmaften{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 390px;
+    height: 238px;
+}
+
+h4{
+    padding: 0%;
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+    width: auto;
+    color:var(--clr-font);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
+}
+
+#filmaftentekst{
     text-align: center;
     font-family: var(--ff-secondary);
 }
