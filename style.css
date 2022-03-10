@@ -118,6 +118,8 @@ a{
     }}
 /*menubar css */
 
+/* event side */
+
 h1 {
 padding: 2%;
 text-align: center;
@@ -136,7 +138,8 @@ font-size: var(--fs-h1);
      'a'
      'b'
      'c'
-     'd';
+     'd'
+     'e';
     }
 
 .grid1{
@@ -147,9 +150,8 @@ font-size: var(--fs-h1);
 }
 .grid3{grid-area: c;}
 .grid4{grid-area: d;}
+.grid5{grid-area: e;}
 
-/* .grid5{grid-area: e;}
-.grid6{grid-area: f;} */
 
 #fastelavn{
 display: block;
@@ -219,6 +221,19 @@ h4{
 }
 
 #filmaftentekst{
+    text-align: center;
+    font-family: var(--ff-secondary);
+}
+
+#afstemningsknap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
+    height: 73px;
+}
+
+#afstemningsknaptekst{
     text-align: center;
     font-family: var(--ff-secondary);
 }
