@@ -255,11 +255,13 @@ h4{
     width: 70%;
     height: 70%;
     position: relative;
+    object-fit: cover;
 }
 
 .carousel__track-container{
+    background: #332F2C;
     height: 100%;
-    padding: 10px;
+    position: relative;
 }
 
 .carousel__track{
@@ -292,7 +294,7 @@ h4{
     right: -40px; 
 }
 
-.carousel__button .img{
+.carousel__button img{
     width: 12px; 
 }
 
@@ -307,10 +309,10 @@ h4{
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background: black;
     margin: 0 12px;
+    background: rgba(0,0,0,.3);
 }
 
 .carousel__indicator .current-slide{
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.75);
 }
