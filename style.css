@@ -424,13 +424,14 @@ h4{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 258px;
-    height: 73px;
+    width: 300px;
+    height: 70px;
 }
 
 #logintekst{
     text-align: center;
     font-family: var(--ff-secondary);
+    color: var(--clr-font);
     padding-top: 15px;
     padding-bottom: 15px;
 }

@@ -1,9 +1,9 @@
 function bigImg(x) {
-    x.style.height = "87px";
-    x.style.width = "309px";
+    x.style.height = "75px";
+    x.style.width = "290px";
  }
  
  function normalImg(x) {
-    x.style.height = "73px";
-    x.style.width = "258px";
+    x.style.height = "auto";
+    x.style.width = "auto";
  }
