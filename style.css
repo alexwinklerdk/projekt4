@@ -448,7 +448,25 @@ h4{
   #login {
       background-color: #1C4751;
     color: #FFFFFF;
+    padding: 5px;
   }
   /* login setup */
+  /* profil */
+  #loginknap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 70px;
+}
+
+#logintekst{
+    text-align: center;
+    font-family: var(--ff-secondary);
+    color: var(--clr-font);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* profil */
 
 
