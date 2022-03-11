@@ -20,11 +20,18 @@ body {
 }
 
 .box1 {
-    background-color: white;
-    margin-top: 40px;
+    bwidth: auto;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 40%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    
 }
 
-/* splash */
+/* splashpage */
 .splash {
     display: flex;
     position: fixed;
@@ -58,7 +65,8 @@ body {
     z-index: -10;
     transition: all 0.5s;
 }
-/* menubar css */
+/* Splashpage */
+/* menubar styling */
 *{
     padding: 0;
     margin: 0;
@@ -151,8 +159,7 @@ a{
     .nav-menu.active{
         left: 0;
     }}
-/*menubar css */
-
+/* menubar styling */
 /* event side */
 
 h1 {
@@ -280,11 +287,7 @@ h4{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
-
-
 /* INDEX */ 
-
 /* galleri */ 
 
 .carousel{
@@ -359,7 +362,8 @@ h4{
 .carousel__indicator .carousel-slide{
     background: rgba(0,0,0,.75);
 }
-
+/* Galleri */
+/* forside */
 #seevents{
     display: block;
     margin-left: auto;
@@ -391,7 +395,7 @@ h4{
     width: 287px;
     height: 85px;
 }
-
+/* Forside */
 /* info */
 #banner {
     height: 200px;
@@ -402,7 +406,7 @@ h4{
     background-image: url(images/beerbox-logo-vector.png);
     background-repeat: no-repeat;
     background-position: center;
-      padding-bottom: 25px;
+    padding-bottom: 25px;
   }
 
   .tekstboks {
@@ -448,8 +452,7 @@ h4{
     text-align: center;
     font-weight: var(--fx-bold);
   }
-  /* info */
-
+/* info */
 /* login setup */
 .tekstboks-ucl-login {
     width: auto;
