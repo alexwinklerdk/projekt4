@@ -13,3 +13,12 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove("active");
     } ))
 /* menubar js */
+
+/*splash js*/
+const splash = document.querySelector('.splash');
+
+document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
+        document.getElementById("splash").style.opacity = 0;('display-none'); 
+    }, 2000);
+}) 
