@@ -326,6 +326,38 @@ h4{
     background: rgba(0,0,0,.75);
 }
 
+#seevents{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
+    height: 59px;
+}
+
+#filmaftenbanner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 284px;
+    height: 68px;
+}
+
+#beerpongknap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
+    height: 73px;
+}
+
+#beerboxinfoknap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 287px;
+    height: 85px;
+}
+
 /* info */
 #banner {
     height: 200px;
