@@ -175,6 +175,8 @@ h2{
 #eventtekst{
 text-align: center;
 font-family: var(--ff-secondary);
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 #beerpong{
@@ -199,6 +201,8 @@ h3{
 #beerpongtekst{
     text-align: center;
     font-family: var(--ff-secondary);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #filmaften{
@@ -223,6 +227,8 @@ h4{
 #filmaftentekst{
     text-align: center;
     font-family: var(--ff-secondary);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #afstemningsknap{
@@ -236,6 +242,8 @@ h4{
 #afstemningsknaptekst{
     text-align: center;
     font-family: var(--ff-secondary);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
@@ -298,7 +306,6 @@ h4{
     width: 12px; 
 }
 
-<<<<<<< Updated upstream
 .carousel__nav{
     display: flex;
     justify-content: center;
@@ -374,7 +381,6 @@ h4{
     text-align: center;
     font-weight: var(--fx-bold);
   }
-=======
 .splash{
     position: fixed;
     top: 0;
@@ -411,4 +417,3 @@ h4{
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
 }
->>>>>>> Stashed changes
