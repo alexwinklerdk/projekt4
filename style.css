@@ -298,6 +298,7 @@ h4{
     width: 12px; 
 }
 
+<<<<<<< Updated upstream
 .carousel__nav{
     display: flex;
     justify-content: center;
@@ -373,3 +374,41 @@ h4{
     text-align: center;
     font-weight: var(--fx-bold);
   }
+=======
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;  
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.5s;   
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+>>>>>>> Stashed changes
