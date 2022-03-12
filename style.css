@@ -277,80 +277,8 @@ h4{
     padding-bottom: 15px;
 }
 /* INDEX */ 
-/* galleri */ 
 
-.carousel{
-    position: relative;
-    height: 600px;
-    width: 80%;
-    margin: 0 auto;
-}
 
-.carousel__image{
-    width: 70%;
-    height: 70%;
-    position: relative;
-    object-fit: cover;
-}
-
-.carousel__track-container{
-    background: #332F2C;
-    height: 100%;
-    position: relative;
-}
-
-.carousel__track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.carousel__slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carousel__button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.carousel__button--left{
-    left: -40px;
-}
-
-.carousel__button--right{
-    right: -40px; 
-}
-
-.carousel__button img{
-    width: 12px; 
-}
-
-.carousel__nav{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.carousel__indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin: 0 12px;
-    background: rgba(0,0,0,.3);
-}
-
-.carousel__indicator .carousel-slide{
-    background: rgba(0,0,0,.75);
-}
 /* Galleri */
 /* forside */
 #seevents{
@@ -384,6 +312,8 @@ h4{
     width: 287px;
     height: 85px;
 }
+
+
 /* Forside */
 /* info */
 #banner {
@@ -512,7 +442,7 @@ h4{
 
   }
 
-  button {
+  .button {
     top:10%;
     background-color: #DE7B1F;
     border-radius: 12px;
