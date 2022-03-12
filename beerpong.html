@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beer Pong</title>
     <link rel="stylesheet" href="style.css">
+    <script src="bp-tilmeldning.js"></script>
+
 </head>
 <body>
      <!-- menubar -->
@@ -30,11 +32,23 @@
     </nav>
     
     </header>
-    <script src="index.js"></script>
+    <script src="burgermenu.js"></script>
     <!-- menubar -->
 
     <div class= "gridevents"></div>
     <div class="grid1"><h1>Turneringer</h1></div>
+
+<!--ENTER YOUR TEAM NAME -->
+    <h2> Beerpong tilmelding </h2>
+    <form class="beerpong__tilmeldning" method="POST">
+      <input type="text" id="turnering" placeholder="Team navn : ">
+    </form>
+    <button class="beerpong__tilmeldning--knap" onclick="my">Tilmeld</button>
+    <p id="demo"></p>
+    </div>
+
+
+
 
 </body>
 </html>

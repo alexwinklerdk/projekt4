@@ -457,3 +457,18 @@ h4{
 }
 
 /** ^Her slutter kampagneknappen **/
+
+
+/* BEERPONG */ 
+
+.beerpong__tilmeldning{
+    background: var(--clr-header);
+    align-items: center;
+    font-family: var(--ff-primary);
+}
+
+.beerpong__tilmeldning--knap{
+    background-color: var(--clr-font);
+    font-family: var(--ff-primary);
+    font-style: var(--clr--background);
+}
