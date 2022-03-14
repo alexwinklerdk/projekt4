@@ -171,6 +171,7 @@ a{
   margin: auto;
 }
 
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -209,6 +210,7 @@ a{
   color: var(--clr--background);
   font-size: 12px;
   padding: 8px 12px;
+  position: absolute;
   top: 0;
 }
 
@@ -226,7 +228,7 @@ a{
 }
 
 .active, .dot:hover {
-  background-color: var(--clr-header); 
+  background-color: var(--clr-header);
 }
 
 /* Fading animation */
@@ -245,7 +247,6 @@ a{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
                                         
 /* Galleri */
 /* info */
