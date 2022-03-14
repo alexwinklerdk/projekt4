@@ -448,12 +448,13 @@ a{
 }
 /* kampagneknap */
 /* Afstemning */ 
-.wrapper
-{
-    margin: 0;
-    padding: 0;
+.wrapper{
+    margin: auto;
+    padding: auto;
     box-sizing: border-box;
-    font-family: var(--ff-secondary)
+    font-family: var(--ff-secondary);
+    font-weight: var(--fx-bold);
+    color: var(--clr-boxbg);
   }
 
   ::selection{
@@ -462,14 +463,13 @@ a{
   }
   .wrapper{
     background: var(--clr-header);
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 25px;
     max-width: 380px;
     width: 100%;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
   }
   .wrapper header{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
   }
   .wrapper .poll-area{
