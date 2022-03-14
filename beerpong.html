@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beer Pong</title>
     <link rel="stylesheet" href="style.css">
+    <script src="bp-tilmeldning.js"></script>
+
 </head>
 <body>
      <!-- menubar -->
@@ -33,64 +35,24 @@
     <script src="burgermenu.js"></script>
     <!-- menubar -->
 
-    <div class="overskrift"> 
-        <p>Turneringer</p>
-     </div>
+    <div class= "gridevents"></div>
+    <div class="grid1"><h1>Turneringer</h1></div>
+
+<!--ENTER YOUR TEAM NAME -->
+    <h2> Beerpong tilmelding </h2>
+    <form class="beerpong__tilmeldning" method="POST">
+      <input type="text" id="turnering" placeholder="Team navn : ">
+    </form>
+    <button class="button" onclick="my">Tilmeld</button>
+    <p id="demo"></p>
+    </div>
+
 
      <div class="boks3">
         <img src="images/turnering.png" alt="filmaftenbanner" style="width: 300px;">
-
-        <p>Næste turnering 04/03 </p>
-        <br>
-        <div class="orange">
-            <p>Beerpong tilmelding</p>
-            <br>
-            <p>Teamnavn</p>
-            <form id="form" action="index.html" method="post">
-                <input type="text" autofocus/><br>
-                <input id="login" type="submit" value="Tilmeld"/>
-        </div>
-    <br>
-    <div class="boks3">
-        <div class="orange">
-            <p>Lineup 6/8</p>
-            <br>
-            <div class="white">
-                <p>Bajerbanden</p>
-                <div class="dark"><p>1</p></div>
-            </div>
-           <br>
-            <div class="white">
-                <p>A-holdet</p>
-                <div class="dark"><p>2</p></div>
-             </div>
-             <br>
-             <div class="white">
-                <p>Tøserne</p>
-                <div class="dark"><p>3</p></div>
-            </div>
-            <br>
-            <div class="white">
-            <p>Tuckheads</p>
-            <div class="dark"><p>4</p></div>
-            </div>
-            <br>
-            <div class="white">
-            <p>Keld og Helle</p>
-            <div class="dark"><p>5</p></div>
-            </div>
-            <br>
-            <div class="white">
-                <p>Mia og Karl</p>
-                <div class="dark"><p>6</p></div>
-            </div>
-            <br>
-        <p>Vis mere</p>
-        </div></div></div>
-
-    <div class="boks3">
-        <a href="events.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/seevents.png" alt="seevents" style="width: 258px;""></a>
     </div>
+
+
 
 </body>
 </html>
