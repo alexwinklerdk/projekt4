@@ -13,7 +13,7 @@
     <nav class="navbar">
         <div class="logo">
             <a href="index.html"><img src="images/beerbox-glas.png" alt="logo" style="width:50px;"></a></div>
-          
+
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Forside</a></li>
             <li class="nav-item"><a href="events.html" class="nav-link">Upcoming events</a></li>
@@ -28,15 +28,46 @@
             <span class="bar"></span>
         </div>
     </nav>
-    
+
     </header>
-    <script src="index.js"></script>
+    <script src="burgermenu.js"></script>
     <!-- menubar -->
 
-    <div class= "gridevents"></div>
-    <div class="grid1"><h1>Afstemning</h1></div>
+    <h1>AFSTEMNING</h1>
 
-    <script src="afstem.js"></script>
+<!-- afstemning -->
+
+    <div class="wrapper">
+        <header>Tema fest</header>
+        <div class="poll-area">
+          <input type="checkbox" name="poll" id="opt-1">
+          <input type="checkbox" name="poll" id="opt-2">
+
+          <label for="opt-1" class="opt-1">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Fastelavn</span>
+              </div>
+              <span class="percent">70%</span>
+            </div>
+            <div class="progress" style='--w:70;'></div>
+          </label>
+          <label for="opt-2" class="opt-2">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Halloween</span>
+              </div>
+              <span class="percent">30%</span>
+            </div>
+            <div class="progress" style='--w:30;'></div>
+          </label>
+        </div>
+      </div>
+      <script src="afstem.js"></script>
+
+<!-- afstemning slut -->
 
 </body>
 </html>

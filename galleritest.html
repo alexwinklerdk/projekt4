@@ -1,51 +1,75 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="galleri.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script type="galleri/javascript">
-    </script>
+
 </head>
 <body>
+    <h2 style="text-align:center">Slideshow Gallery</h2>
 
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/img1.png" style="width:100%">
+  </div>
 
-    <!-- GALLERI -->
-    <div class="carousel">
-        <div>
-        <button class="carousell__button carousell__button--left">
-                <img src="images/pil-venstre.png" alt="pil-venstre"></div>
-        </button>
-    </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/img2.png" style="width:100%">
+  </div>
 
-        <div class="carousel__track-container">
-            <ul class="carousel__track">
-                <li class="carousel__slide">
-                    <img class="carousel__image" src="images/img1.png" alt="galleri-event-billede">
-                </li>
-                <li class="carousel__slide">
-                    <img class="carousel__image" src="images/img2.png" alt="galleri-event-billede">
-                </li>
-                <li class="carousel__slide">
-                    <img class="carousel__image" src="images/img3.png" alt="galleri-event-billede">
-                </li>
-            </ul>
-        </div>
-
-        <div>
-        <button class="carousel__button carousel__button-right">
-            <img src="images/pil-hojre.png" alt="pil-hojre">
-        </button>
-    </div>
-
-    <div class="carousel__nav">
-        <button class="carousel__indicator current-slide"></button>
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
-    </div>
-
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/img3.png" style="width:100%">
+  </div>
     
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="images/img1.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="images/img2.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="images/img3.png" style="width:100%">
+    </div>
+  
+    
+  <a class="prev" onclick="plusSlides(-1)"><img src="pil-venstre.png" alt=""></a>
+  <a class="next" onclick="plusSlides(1)"><img src="pil-hojer.png" alt=""></a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/img1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/img2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/img3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+  <img class="demo cursor" src="images/img1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+</div>
+<div class="column">
+  <img class="demo cursor" src="images/img2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+</div>
+<div class="column">
+  <img class="demo cursor" src="images/img3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+</div>
+</div>
 </body>
 </html>

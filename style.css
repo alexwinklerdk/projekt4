@@ -225,81 +225,103 @@ h4{
     padding-bottom: 15px;
 }
 /* INDEX */ 
-/* galleri */ 
 
-.carousel{
-    position: relative;
-    height: 600px;
-    width: 80%;
-    margin: 0 auto;
+
+                                                /* Galleri start */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  min-width: auto;
+  position: relative;
+  margin: auto;
 }
 
-.carousel__image{
-    width: 70%;
-    height: 70%;
-    position: relative;
-    object-fit: cover;
+.mySlides {
+  position: absolute;
 }
 
-.carousel__track-container{
-    background: #332F2C;
-    height: 100%;
-    position: relative;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 29%;
+  padding: 16px;
+  color: var(--clr-header);
+  font-weight: var(--fx-bold);
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.carousel__track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 28px 1px 1px 28px;
 }
 
-.carousel__slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+/* Position the 'prev button' to the left */
+.prev {
+    left: 0px;
+    border-radius: 1px 28px 28px 1px;
 }
 
-.carousel__button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.carousel__button--left{
-    left: -40px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--clr--background);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.carousel__button--right{
-    right: -40px; 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
 }
 
-.carousel__button img{
-    width: 12px; 
+.active, .dot:hover {
+  background-color: var(--clr-header); 
 }
 
-.carousel__nav{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.carousel__indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin: 0 12px;
-    background: rgba(0,0,0,.3);
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-.carousel__indicator .carousel-slide{
-    background: rgba(0,0,0,.75);
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
-/* Galleri */
+
+                                                            /* Galleri slut */
+
 /* forside */
 #seevents{
     display: block;
@@ -332,6 +354,8 @@ h4{
     width: 287px;
     height: 85px;
 }
+
+
 /* Forside */
 /* info */
 #banner {
@@ -443,35 +467,175 @@ h4{
 }
 /* profil */
 
-/** Er her kampagneknappen **/
-.myDIV {
-    padding: 50px;
-    align-items: center;
-    background-color: white;
+/** Kampagneknappen **/
+.hidden{
+    display: none;
   }
-
-  #kampagnebillede {
-    display: block;
-   margin-left: auto;
-   margin-right: auto;
-    margin-top: 10px;
-    height:500px;
-    width: 500px;
-
+  
+    img {
+      display: block;;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px
+    }
+  
+    button {
+      margin: 100;
+      position: absolute;
+      left: 50%;
+      top: 50px;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  
+      background-color: #DE7B1F;
+      border-radius: 12px;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
   }
+  /** ^Her slutter kampagneknappen **/
 
-  button {
-    top:10%;
-    background-color: #DE7B1F;
-    border-radius: 12px;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+
+/* BEERPONG */ 
+
+.beerpong__tilmeldning{
+    background: var(--clr-header);
+    position: relative;
+    font-family: var(--ff-primary);
+    height: 90px;
+    width: 250px;
 }
 
-/** ^Her slutter kampagneknappen **/
+.beerpong__tilmeldning--knap{
+    background-color: var(--clr-font);
+    font-family: var(--ff-primary);
+    font-style: var(--clr--background);
+}
+
+
+/* Afstemning */ 
+.wrapper
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ::selection{
+    color: #fff;
+    background: #6665ee;
+  }
+  .wrapper{
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  }
+  .wrapper header{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .wrapper .poll-area{
+    margin: 20px 0 15px 0;
+  }
+  .poll-area label{
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: 2px solid #e6e6e6;
+    transition: all 0.2s ease;
+  }
+  .poll-area label:hover{
+    border-color: #ddd;
+  }
+  label.selected{
+    border-color: #6665ee!important;
+  }
+  label .row{
+    display: flex;
+    pointer-events: none;
+    justify-content: space-between;
+  }
+  label .row .column{
+    display: flex;
+    align-items: center;
+  }
+  label .row .circle{
+    height: 19px;
+    width: 19px;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+  }
+  label.selected .row .circle{
+    border-color: #6665ee;
+  }
+  label .row .circle::after{
+    content: "";
+    height: 11px;
+    width: 11px;
+    background: #6665ee;
+    border-radius: inherit;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: none;
+  }
+  .poll-area label:hover .row .circle::after{
+    display: block;
+    background: #e6e6e6;
+  }
+  label.selected .row .circle::after{
+    display: block;
+    background: #6665ee!important;
+  }
+  label .row span{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  label .row .percent{
+    display: none;
+  }
+  label .progress{
+    height: 7px;
+    width: 100%;
+    position: relative;
+    background: #f0f0f0;
+    margin: 8px 0 3px 0;
+    border-radius: 30px;
+    display: none;
+    pointer-events: none;
+  }
+  label .progress:after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    background: #ccc;
+    width: calc(1% * var(--w));
+    border-radius: inherit;
+    transition: all 0.2s ease;
+  }
+  label.selected .progress::after{
+    background: #6665ee;
+  }
+  label.selectall .progress,
+  label.selectall .row .percent{
+    display: block;
+  }
+  input[type="radio"],
+  input[type="checkbox"]{
+    display: none;
+  }
+/* Afstemning slut*/ 
+
