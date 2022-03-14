@@ -19,7 +19,6 @@ body {
     background-color:var(--clr--background)
 }
 
-
 /* splashpage */
 .splash {
     display: flex;
@@ -28,7 +27,7 @@ body {
     height: 100%;
     width: 100vh;
     background-color: #DE7B03;
-    margin: -80px 0px 0px -80px;
+    margin-left: -250px;
     z-index: 200;
 }
 
@@ -50,7 +49,7 @@ body {
     height: 100%;
     width: 100vh;
     background-color: #DE7B03;
-    margin: -80px 0px 0px -80px;
+    margin-left: -250px;
     z-index: -10;
     transition: all 0.5s;
 }
@@ -149,86 +148,19 @@ a{
         left: 0;
     }}
 /* menubar styling */
-/* event side */
-h1 {
-padding: 2%;
-text-align: center;
-margin: 0;
-margin-top: 3%;
-width: auto;
-color:var(--clr-font);
-font-family: var(--ff-primary);
-font-size: var(--fs-h1);
-}
-
-h2{
-    padding: 0%;
-    text-align: center;
-    margin: 0;
-    margin-top: 2%;
-    width: auto;
-    color:var(--clr-font);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-h2);
-}
-
-h3{
-    padding: 0%;
-    text-align: center;
-    margin: 0;
-    margin-top: 2%;
-    width: auto;
-    color:var(--clr-font);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-h2);
-}
-
-#filmaften{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 390px;
-    height: 238px;
-    font-family: var(--ff-primary);
-}
-
-h4{
-    padding: 0%;
-    text-align: center;
-    margin: 0;
-    margin-top: 2%;
-    width: auto;
-    color:var(--clr-font);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-h2);
-}
-
-#filmaftentekst{
-    text-align: center;
-    font-family: var(--ff-secondary);
+/* overskrifter */
+.overskrift {
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-#afstemningsknap{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 258px;
-    height: 73px;
-}
-
-#afstemningsknaptekst{
+    color:var(--clr-font);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h1);
     text-align: center;
-    font-family: var(--ff-secondary);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    font-weight: var(--fx-bold);
+
 }
-/* INDEX */ 
-
-
-                                                /* Galleri start */
-
+/* overskrifter */
+/* Galleri */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -239,21 +171,17 @@ h4{
   margin: auto;
 }
 
-.mySlides {
-  position: absolute;
-}
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: 29%;
+  margin-top: -5%;
   padding: 16px;
   color: var(--clr-header);
   font-weight: var(--fx-bold);
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -281,7 +209,6 @@ h4{
   color: var(--clr--background);
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
   top: 0;
 }
 
@@ -319,44 +246,8 @@ h4{
   from {opacity: .4}
   to {opacity: 1}
 }
-
-                                                            /* Galleri slut */
-
-/* forside */
-#seevents{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 258px;
-    height: 59px;
-}
-
-#filmaftenbanner{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 284px;
-    height: 68px;
-}
-
-#beerpongknap{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 258px;
-    height: 73px;
-}
-
-#beerboxinfoknap{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 287px;
-    height: 85px;
-}
-
-
-/* Forside */
+                                        
+/* Galleri */
 /* info */
 #banner {
     height: 200px;
@@ -369,22 +260,23 @@ h4{
     background-position: center;
     padding-bottom: 25px;
   }
-
-  .tekstboks {
+/* info */
+/* Base styling ref. */
+  .boks1 {
     width: auto;
     height: auto;
     margin-left:auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, 40%);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font: var(--ff-secondary);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--ff-secondary);
     font-size: var(--fs-h2);
     font-style: var(--clr-font);
     text-align: center;
   }
 
-  .tekstboks2 {
+  .boks2 {
     width: auto;
     height: auto;
     margin-left:auto;
@@ -399,7 +291,8 @@ h4{
     font-weight: var(--fx-bold);
   }
 
-  .tekstboks3 {
+  .boks3 {
+    justify-content: space-between;
     width: auto;
     height: auto;
     margin-left:auto;
@@ -407,13 +300,86 @@ h4{
     background-color: rgba(255, 255, 255, 40%);
     padding-top: 15px;
     padding-bottom: 15px;
-    font: var(--ff-secondary);
+    font-family: var(--ff-secondary);
     font-size: var(--fs-h2);
-    font-style: var(--clr-font);
     text-align: center;
     font-weight: var(--fx-bold);
   }
-/* info */
+
+.orange {
+    width: 250px;
+    height: auto;
+    border-radius: 25px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: var(--clr-header);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h2);
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: var(--fx-bold);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.white {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    background-color: var(--clr-boxbg);
+    font-family: var(--ff-secondary);
+    color: var(--clr-font);
+    line-height: 50px;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: var(--fw-reg);
+ 
+}
+
+.dark {
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    background-color: var(--clr-font);
+    font-family: var(--ff-primary);
+    color: var(--clr-boxbg);
+    text-align: center;
+    font-weight: var(--fx-bold);
+}
+
+.orange2 {
+    width: 250px;
+    height: auto;
+    border-radius: 25px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: var(--clr-header);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h2);
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: var(--fw-reg);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ .orange3 {
+    width: 250px;
+    height: auto;
+    border-radius: 25px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: var(--clr-header);
+    opacity: 50%;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h2);
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: var(--fw-reg);
+    padding-top: 5px;
+    padding-bottom: 5px;
+ }
+    
+/* base styling ref */
 /* login setup */
 .tekstboks-ucl-login {
     width: auto;
@@ -448,91 +414,54 @@ h4{
     color: #FFFFFF;
     padding: 5px;
   }
-  /* login setup */
-  /* profil */
-  #loginknap{
+/* login setup */
+/*kampagneknap*/
+.hidden{
+  display: none;
+}
+
+  img {
+    width: 258px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-    height: 70px;
-}
+  }
 
-#logintekst{
+  .knap {
+    width: 275px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: #DE7B1F;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 10px 32px;
     text-align: center;
-    font-family: var(--ff-secondary);
-    color: var(--clr-font);
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-/* profil */
-
-/** Kampagneknappen **/
-.hidden{
-    display: none;
-  }
-  
-    img {
-      display: block;;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 100px
-    }
-  
-    button {
-      margin: 100;
-      position: absolute;
-      left: 50%;
-      top: 50px;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  
-      background-color: #DE7B1F;
-      border-radius: 12px;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-  }
-  /** ^Her slutter kampagneknappen **/
-
-
-/* BEERPONG */ 
-
-.beerpong__tilmeldning{
-    background: var(--clr-header);
-    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: var(--fw-reg);
     font-family: var(--ff-primary);
-    height: 90px;
-    width: 250px;
+  }
+  .button {
+   -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
-
-.beerpong__tilmeldning--knap{
-    background-color: var(--clr-font);
-    font-family: var(--ff-primary);
-    font-style: var(--clr--background);
-}
-
-
+/* kampagneknap */
 /* Afstemning */ 
 .wrapper
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ff-secondary)
   }
 
   ::selection{
     color: #fff;
-    background: #6665ee;
+    background: var(--clr-boxbg);
   }
   .wrapper{
-    background: #fff;
+    background: var(--clr-header);
     border-radius: 15px;
     padding: 25px;
     max-width: 380px;
@@ -558,7 +487,7 @@ h4{
     border-color: #ddd;
   }
   label.selected{
-    border-color: #6665ee!important;
+    border-color: var(--clr-boxbg)!important;
   }
   label .row{
     display: flex;
@@ -579,13 +508,13 @@ h4{
     position: relative;
   }
   label.selected .row .circle{
-    border-color: #6665ee;
+    border-color: var(--clr-boxbg);
   }
   label .row .circle::after{
     content: "";
     height: 11px;
     width: 11px;
-    background: #6665ee;
+    background:var(--clr-boxbg);
     border-radius: inherit;
     position: absolute;
     left: 2px;
@@ -594,11 +523,11 @@ h4{
   }
   .poll-area label:hover .row .circle::after{
     display: block;
-    background: #e6e6e6;
+    background: var(--clr-font);
   }
   label.selected .row .circle::after{
     display: block;
-    background: #6665ee!important;
+    background: var(--clr-font)!important;
   }
   label .row span{
     font-size: 16px;
@@ -627,7 +556,7 @@ h4{
     transition: all 0.2s ease;
   }
   label.selected .progress::after{
-    background: #6665ee;
+    background: var(--clr-font);
   }
   label.selectall .progress,
   label.selectall .row .percent{
@@ -637,4 +566,4 @@ h4{
   input[type="checkbox"]{
     display: none;
   }
-/* Afstemning slut*/ 
+/* Afstemning */ 
