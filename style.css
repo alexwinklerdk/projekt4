@@ -150,7 +150,6 @@ a{
     }}
 /* menubar styling */
 /* event side */
-
 h1 {
 padding: 2%;
 text-align: center;
@@ -160,36 +159,6 @@ width: auto;
 color:var(--clr-font);
 font-family: var(--ff-primary);
 font-size: var(--fs-h1);
-}
-
-.gridevents{
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-     'a'
-     'b'
-     'c'
-     'd'
-     'e';
-    }
-
-.grid1{
-    grid-area: a;
-}
-.grid2{
-    grid-area: b;
-}
-.grid3{grid-area: c;}
-.grid4{grid-area: d;}
-.grid5{grid-area: e;}
-
-
-#fastelavn{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 389px;
-height: 266px;
 }
 
 h2{
@@ -203,21 +172,6 @@ h2{
     font-size: var(--fs-h2);
 }
 
-#eventtekst{
-text-align: center;
-font-family: var(--ff-secondary);
-padding-top: 15px;
-padding-bottom: 15px;
-}
-
-#beerpong{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 390px;
-    height: 313px;
-}
-
 h3{
     padding: 0%;
     text-align: center;
@@ -229,19 +183,13 @@ h3{
     font-size: var(--fs-h2);
 }
 
-#beerpongtekst{
-    text-align: center;
-    font-family: var(--ff-secondary);
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
 #filmaften{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 390px;
     height: 238px;
+    font-family: var(--ff-primary);
 }
 
 h4{
