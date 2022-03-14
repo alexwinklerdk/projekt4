@@ -27,7 +27,7 @@ body {
     height: 100%;
     width: 100vh;
     background-color: #DE7B03;
-    margin: -80px 0px 0px -80px;
+    margin-left: -250px;
     z-index: 200;
 }
 
@@ -49,7 +49,7 @@ body {
     height: 100%;
     width: 100vh;
     background-color: #DE7B03;
-    margin: -80px 0px 0px -80px;
+    margin-left: -250px;
     z-index: -10;
     transition: all 0.5s;
 }
@@ -292,6 +292,7 @@ a{
   }
 
   .boks3 {
+    justify-content: space-between;
     width: auto;
     height: auto;
     margin-left:auto;
@@ -427,7 +428,7 @@ a{
   }
 
   .knap {
-    width: 300px;
+    width: 275px;
     margin-left:auto;
     margin-right: auto;
     background-color: #DE7B1F;
