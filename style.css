@@ -126,6 +126,7 @@ a{
   transform: translateY(-8px) rotate(-45deg);
 }
 
+
 .nav-menu{
   position: fixed;
   left: -100%;
@@ -140,6 +141,7 @@ a{
   font-size: var(--fs-nav);
   text-align: center;
   transition: 0.3s;
+  z-index: 9999;
 }
 
 .nav-item{
