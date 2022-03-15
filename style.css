@@ -25,9 +25,8 @@ body {
   position: fixed;
   align-items: center;
   height: 100%;
-  width: 100vh;
+  width: 100%;
   background-color: #DE7B03;
-  padding-left: 20px;
   z-index: 200;
 }
 
@@ -47,9 +46,8 @@ body {
   align-items: center;
   opacity: 0;
   height: 100%;
-  width: 100vh;
+  width: 100%;
   background-color: #DE7B03;
-  padding-left: 20px;
   z-index: -10;
   transition: all 0.5s;
 }
