@@ -399,6 +399,8 @@ a{
   font-family: sans-serif;
 }
 /* login setup */
+
+
 /*kampagneknap*/
 .hidden{
   display: none;
@@ -412,18 +414,15 @@ a{
   align-items: center;
 }
 
-.button {
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.knapboks {
+button {
   width: 250px;
   height: auto;
   border-radius: 25px;
   margin-left:auto;
   margin-right: auto;
+
   background-color: var(--clr-header);
+  border: none;
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: var(--ff-primary);
