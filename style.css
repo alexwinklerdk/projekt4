@@ -173,12 +173,12 @@ a{
   background-color: rgba(255, 255, 255, 40%);
   padding-top: 15px;
   padding-bottom: 15px;
-  font: var(--ff-secondary);
+  font-family: var(--ff-secondary);
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: var(--ff-secondary);
   font-size: var(--fs-h2);
-  font-style: var(--clr-font);
+  color: var(--clr-font);
   text-align: center;
 }
   
@@ -206,10 +206,9 @@ a{
   background-color: rgba(255, 255, 255, 40%);
   padding-top: 15px;
   padding-bottom: 15px;
-  font: var(--ff-secondary);
   font-family: var(--ff-secondary);
   font-size: var(--fs-h2);
-  font-style: var(--clr-font);
+  color: var(--clr-font);
   text-align: center;
   font-weight: var(--fx-bold);
 }
@@ -439,7 +438,6 @@ button {
 .wrapper
 {
   margin: auto;
-  padding: auto;
   box-sizing: border-box;
   font-family: var(--ff-secondary);
   color: var(--clr-boxbg);
