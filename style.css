@@ -27,13 +27,13 @@ body {
   height: 100%;
   width: 100vh;
   background-color: #DE7B03;
-  margin-left: -250px;
+  padding-left: 20px;
   z-index: 200;
 }
 
 @keyframes fadeIn {
   to{
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -49,17 +49,18 @@ body {
   height: 100%;
   width: 100vh;
   background-color: #DE7B03;
-  margin-left: -250px;
+  padding-left: 20px;
   z-index: -10;
   transition: all 0.5s;
 }
 /* Splashpage */
-/* menubar styling */
+/* menubar */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 header{
   background-color: var(--clr-header);
 }
@@ -71,7 +72,6 @@ li{
 a{
   color: var(--clr-boxbg);
   text-decoration: none;
-  font-family: var(--ff-primary);
 }
 
 .navbar{
@@ -108,171 +108,70 @@ a{
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: var(--clr-boxbg);
 }
 
 @media (max-width:768px){
-  .hamburger{
-      display: block;
-  }
+.hamburger{
+  display: block;
+}
 
-  .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-  }
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
 
-  .nav-menu{
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: var(--clr-header);
-      z-index: 200;
-      width: 100%;
-      opacity: 95%;
-      text-align: center;
-      transition: 0.3s;
-  }
+.nav-menu{
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--clr-header);
+  width: 100%;
+  opacity: 90%;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-nav);
+  text-align: center;
+  transition: 0.3s;
+}
 
-  .nav-item{
-      margin: 16px 0;
-  }
+.nav-item{
+  margin: 16px 0;
+}
 
-  .nav-menu.active{
-      left: 0;
-  }}
-/* menubar styling */
-/* overskrifter */
-.overskrift {
+.nav-menu.active{
+  left: 0;
+}}
+/* menubar */
+/* Base styling ref. */
+
+.overskrift{
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  color:var(--clr-font);
   font-family: var(--ff-primary);
   font-size: var(--fs-h1);
-  text-align: center;
   font-weight: var(--fx-bold);
-
+  text-align: center;
 }
-/* overskrifter */
-
-
-
-/* Galleri */
-*{box-sizing:border-box}
-.mySlides {display: none}
-
-/* Slideshow container */
-.slideshow-container {
-max-width: 500px;
-min-width: auto;
-position: relative;
-margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -5%;
-padding: 16px;
-color: var(--clr-header);
-font-weight: var(--fx-bold);
-font-size: 20px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-right: 0px;
-border-radius: 28px 1px 1px 28px;
-}
-
-/* Position the 'prev button' to the left */
-.prev {
-  left: 0px;
-  border-radius: 1px 28px 28px 1px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-color: var(--clr--background);
-font-size: 12px;
-padding: 8px 12px;
-top: 0;
-position: absolute;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-position: relative;
-}
-
-.active, .dot:hover {
-background-color: var(--clr-header); 
-}
-
-/* Fading animation */
-.fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
-animation-name: fade;
-animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
-}
-
-@keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
-}
-                                      
-/* Galleri */
-/* info */
-#banner {
-  height: 200px;
-  width: auto;
-  margin-left:auto;
-  margin-right: auto;
-  background-size: contain;
-  background-image: url(images/beerbox-logo-vector.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-bottom: 25px;
-}
-/* info */
-/* Base styling ref. */
+  
 .boks1 {
   width: auto;
   height: auto;
   margin-left:auto;
   margin-right: auto;
   background-color: rgba(255, 255, 255, 40%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font: var(--ff-secondary);
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: var(--ff-secondary);
@@ -280,7 +179,8 @@ to {opacity: 1}
   font-style: var(--clr-font);
   text-align: center;
 }
-
+  
+  
 .boks2 {
   width: auto;
   height: auto;
@@ -289,15 +189,14 @@ to {opacity: 1}
   background-color: rgba(255, 255, 255, 40%);
   padding-top: 15px;
   padding-bottom: 15px;
-  color:var(--clr-font);
   font-family: var(--ff-primary);
   font-size: var(--fs-h1);
-  text-align: center;
   font-weight: var(--fx-bold);
+  text-align: center;
 }
-
+  
+  
 .boks3 {
-
   width: auto;
   height: auto;
   margin-left:auto;
@@ -305,12 +204,14 @@ to {opacity: 1}
   background-color: rgba(255, 255, 255, 40%);
   padding-top: 15px;
   padding-bottom: 15px;
+  font: var(--ff-secondary);
   font-family: var(--ff-secondary);
   font-size: var(--fs-h2);
+  font-style: var(--clr-font);
   text-align: center;
   font-weight: var(--fx-bold);
 }
-
+  
 .orange {
   width: 250px;
   height: auto;
@@ -337,9 +238,8 @@ to {opacity: 1}
   text-align: right;
   padding-right: 5px;
   font-weight: var(--fw-reg);
-
 }
-
+  
 .dark {
   width: 50px;
   height: 50px;
@@ -350,7 +250,7 @@ to {opacity: 1}
   text-align: center;
   font-weight: var(--fx-bold);
 }
-
+  
 .orange2 {
   width: 250px;
   height: auto;
@@ -366,7 +266,7 @@ to {opacity: 1}
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
+  
 .orange3 {
   width: 250px;
   height: auto;
@@ -382,80 +282,165 @@ to {opacity: 1}
   font-weight: var(--fw-reg);
   padding-top: 5px;
   padding-bottom: 5px;
-}
-  
+}  
 /* base styling ref */
+/* Galleri */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  min-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -5%;
+  padding: 16px;
+  color: var(--clr-header);
+  font-weight: var(--fx-bold);
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 28px 1px 1px 28px;
+}
+
+/* Position the 'prev button' to the left */
+.prev {
+  left: 0px;
+  border-radius: 1px 28px 28px 1px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--clr--background);
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+}
+
+.active, .dot:hover {
+  background-color: var(--clr-header);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Galleri */
+/* info ikoner */
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 50px 100px 50px 100px;
+}
+  /* info ikoner */
 /* login setup */
 .tekstboks-ucl-login {
+  background-color:  #19444D;
   width: auto;
-  height: auto;
-  margin-left:auto;
-  margin-right: auto;
-  background-color: #1C4751;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: sans-serif;
-  font-size: var(--fs-h2);
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.tekstboks-ucl-login2 {
-  width: auto;
-  height: auto;
-  margin-left:auto;
-  margin-right: auto;
-  background-color: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: sans-serif;
-  font-size: 10px;
-  text-align: center;
-  color:var(--clr-font)
-}
-
-#login {
-    background-color: #1C4751;
   color: #FFFFFF;
   padding: 5px;
+  font-family: sans-serif;
+}
+  
+.tekstboks-ucl-login2 {
+  width: auto;
+  color: var(--clr-font);
+  padding: 5px;
+  text-align: center;
+  font-family: sans-serif;
 }
 /* login setup */
 /*kampagneknap*/
 .hidden{
-display: none;
+  display: none;
 }
-
-img {
-  width: 258px;
+  
+.img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
+  align-items: center;
 }
 
-button {
-  width: 275px;
+.button {
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.knapboks {
+  width: 250px;
+  height: auto;
+  border-radius: 25px;
   margin-left:auto;
   margin-right: auto;
-  background-color: #DE7B1F;
-  border-radius: 25px;
-  border: none;
-  color: white;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: var(--fw-reg);
+  background-color: var(--clr-header);
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-family: var(--ff-primary);
+  font-size: var(--fs-h2);
+  color: var(--clr-boxbg);
+  text-align: center;
+  font-weight: var(--fw-reg);
 }
 
-/* kampagneknap */
 /* Afstemning */ 
 .wrapper
 {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   box-sizing: border-box;
-  font-family: var(--ff-secondary)
+  font-family: var(--ff-secondary);
+  color: var(--clr-boxbg);
 }
 
 ::selection{
@@ -464,15 +449,15 @@ button {
 }
 .wrapper{
   background: var(--clr-header);
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 25px;
-  max-width: 380px;
+  max-width: 280px;
   width: 100%;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 }
 .wrapper header{
   font-size: 22px;
-  font-weight: 600;
+  font-weight: var(--fx-bold);
 }
 .wrapper .poll-area{
   margin: 20px 0 15px 0;
@@ -525,7 +510,7 @@ label .row .circle::after{
 }
 .poll-area label:hover .row .circle::after{
   display: block;
-  background: var(--clr-font);
+  background: var(--clr-boxbg);
 }
 label.selected .row .circle::after{
   display: block;
@@ -539,10 +524,10 @@ label .row .percent{
   display: none;
 }
 label .progress{
-  height: 7px;
+  height: 6px;
   width: 100%;
-  position: relative;
-  background: #f0f0f0;
+  position:relative;
+  background: var(--clr-font);
   margin: 8px 0 3px 0;
   border-radius: 30px;
   display: none;
@@ -558,7 +543,7 @@ label .progress:after{
   transition: all 0.2s ease;
 }
 label.selected .progress::after{
-  background: var(--clr-font);
+  background: var(--clr-boxbg);
 }
 label.selectall .progress,
 label.selectall .row .percent{
@@ -569,12 +554,3 @@ input[type="checkbox"]{
   display: none;
 }
 /* Afstemning */ 
-
-.main{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-align-content: center;
-padding: 20px 20px 20px 50px;
-}

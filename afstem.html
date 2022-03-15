@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
     <link rel="stylesheet" href="style.css">
-    <title>Afstemning</title>
+ 
 </head>
 <body>
-        <!-- menubar -->
+
+<!-- menubar -->
 <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="images/beerbox-glas.png" alt="logo" style="width:50px;"></a></div>
-          
+            <img src="images/beerbox-glas.png" alt="logo" style="width:50px"/>
+        </div>
+              
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Forside</a></li>
             <li class="nav-item"><a href="events.html" class="nav-link">Upcoming events</a></li>
@@ -28,27 +31,22 @@
             <span class="bar"></span>
         </div>
     </nav>
-    
-    </header>
-    <script src="burgermenu.js"></script>
-    <script src="knapper.js"></script>
-    <script src="kampagne.js"></script>
-    
+        
+</header>
+    <script src="js/menu.js"></script>
+    <script src="js/knapper.js"></script>
+<!-- menubar -->
+        
+<div class="overskrift"> 
+    <p>Afstemning</p>
+</div>
 
-    <!-- menubar -->
-
-    <div class="overskrift"> 
-        <p>Afstemning</p>
-     </div>
-
-     <div class="boks1">
-    
-       <div class="wrapper">
+<div class="boks1">
+    <div class="wrapper">
         <p>Temafest</p>
         <div class="poll-area">
           <input type="checkbox" name="poll" id="opt-1">
           <input type="checkbox" name="poll" id="opt-2">
-
           <label for="opt-1" class="opt-1">
             <div class="row">
               <div class="column">
@@ -71,9 +69,9 @@
           </label>
         </div>
       </div>
-      <script src="afstem.js"></script>
-
-      <br>
+      <script src="js/afstem.js"></script>
+    </div></div>
+ <div class="boks1">
     <div class="orange2">
       <p>Gys eller komedie</p>
     </div>
@@ -103,7 +101,12 @@
      </div>
 </div>
      <br>
-     <a href="info.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/beerboxinfoknap.png"  alt="beerboxinfoknap" style="width: 258px;"></a>
+<div class="boks1">
+<a href="info.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/beerboxinfoknap.png"  alt="beerboxinfoknap" style="width: 258px;"></a>
+</div>
+<script src="js/knapper.js"></script>
+
+</div>
 
 </body>
 </html>
