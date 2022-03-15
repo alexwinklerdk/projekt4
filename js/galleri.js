@@ -1,4 +1,3 @@
-
 /* galleri */
 
 var slideIndex = 1;

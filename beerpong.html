@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beer Pong</title>
+    <title>Forside</title>
     <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
-     <!-- menubar -->
+<!-- menubar -->
 <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="images/beerbox-glas.png" alt="logo" style="width:50px;"></a></div>
-          
+            <img src="images/beerbox-glas.png" alt="logo" style="width:50px"/>
+        </div>
+              
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Forside</a></li>
             <li class="nav-item"><a href="events.html" class="nav-link">Upcoming events</a></li>
@@ -28,69 +30,72 @@
             <span class="bar"></span>
         </div>
     </nav>
-    
-    </header>
-    <script src="burgermenu.js"></script>
-    <!-- menubar -->
+        
+</header>
+    <script src="js/menu.js"></script>
+    <script src="js/knapper.js"></script>
+<!-- menubar -->
+        
+<div class="overskrift"> 
+  <p>Turneringer</p>
+</div>
 
-    <div class="overskrift"> 
-        <p>Turneringer</p>
-     </div>
 
-     <div class="boks3">
-        <img src="images/turnering.png" alt="filmaftenbanner" style="width: 200px;"">
+<div class="boks3">
+  <img src="images/turnering.png" alt="filmaftenbanner" style="width: 350px;"">
 
-        <p>Næste turnering 04/03 </p>
-        <br>
-        <div class="orange">
-            <p>Beerpong tilmelding</p>
-            <br>
-            <p>Teamnavn</p>
-            <form id="form" action="index.html" method="post">
-                <input type="text" autofocus/><br>
-                <input id="login" type="submit" value="Tilmeld"/>
-        </div>
+  <p>Næste turnering 04/03 </p>
+  <br>
+  <div class="orange">
+    <p>Beerpong tilmelding</p>
     <br>
-    <div class="boks3">
-        <div class="orange">
-            <p>Lineup 6/8</p>
-            <br>
-            <div class="white">
-                <p>Bajerbanden</p>
-                <div class="dark"><p>1</p></div>
-            </div>
-           <br>
-            <div class="white">
-                <p>A-holdet</p>
-                <div class="dark"><p>2</p></div>
-             </div>
-             <br>
-             <div class="white">
-                <p>Tøserne</p>
-                <div class="dark"><p>3</p></div>
-            </div>
-            <br>
-            <div class="white">
+    <p>Teamnavn</p>
+    <form id="form" action="index.html" method="post">
+        <input type="text" autofocus/><br>
+        <input id="login" type="submit" value="Tilmeld"/>
+  </div>
+  <br>
+<div class="boks3">
+    <div class="orange">
+        <p>Lineup 6/8</p>
+        <br>
+        <div class="white">
+            <p>Bajerbanden</p>
+            <div class="dark"><p>1</p></div>
+        </div>
+        <br>
+        <div class="white">
+            <p>A-holdet</p>
+            <div class="dark"><p>2</p></div>
+        </div>
+        <br>
+        <div class="white">
+            <p>Tøserne</p>
+            <div class="dark"><p>3</p></div>
+        </div>
+        <br>
+        <div class="white">
             <p>Tuckheads</p>
             <div class="dark"><p>4</p></div>
-            </div>
-            <br>
-            <div class="white">
+        </div>
+        <br>
+        <div class="white">
             <p>Keld og Helle</p>
             <div class="dark"><p>5</p></div>
-            </div>
-            <br>
-            <div class="white">
-                <p>Mia og Karl</p>
-                <div class="dark"><p>6</p></div>
-            </div>
-            <br>
+        </div>
+        <br>
+        <div class="white">
+            <p>Mia og Karl</p>
+            <div class="dark"><p>6</p></div>
+        </div>
+        <br>
         <p>Vis mere</p>
-        </div></div></div>
-
-    <div class="boks3">
-        <a href="events.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/seevents.png" alt="seevents" style="width: 258px;""></a>
+        </div>
     </div>
+</div>
 
+<div class="boks3">
+  <a href="events.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/seevents.png" alt="seevents" style="width: 258px;""></a>
+</div>
 </body>
 </html>

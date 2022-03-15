@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forside</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;family=Oxygen:wght@700&amp;family=Roboto+Slab:wght@200;300;700&amp;display=swap" rel="style">
+ 
 </head>
 <body>
-        <!-- menubar -->
+<!-- menubar -->
 <header>
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="images/beerbox-glas.png" alt="logo" style="width:50px;"></a></div>
-          
+            <img src="images/beerbox-glas.png" alt="logo" style="width:50px"/>
+        </div>
+              
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Forside</a></li>
             <li class="nav-item"><a href="events.html" class="nav-link">Upcoming events</a></li>
@@ -30,21 +30,22 @@
             <span class="bar"></span>
         </div>
     </nav>
-    </header>
-    <script src="burgermenu.js"></script>
-    <script src="profil.js"></script>
-    <!-- menubar -->
+        
+</header>
+     <script src="js/menu.js"></script>
+    <script src="js/knapper.js"></script>
+<!-- menubar -->
+ 
+<div class="overskrift"> 
+    <p>Profil</p>
+</div>
 
-    <div class="overskrift"> 
-        <p>Profil</p>
-     </div>
-
+<br>
+<div class="boks3">
+    <a href="login.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/login-knap.png" alt="loginknap" style="width: 258px;"></a>
     <br>
-    <div class="boks3">
-        <a href="login.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/login-knap.png" alt="loginknap" style="width: 258px;"></a>
-        <br>
-        <p>Login via. ucl for at tilgå profil</p>
-        </div>
+    <p>Login via. ucl for at tilgå profil</p>
+</div>
 
 </body>
 </html>
