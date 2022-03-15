@@ -427,7 +427,7 @@ img {
   margin-right: auto;
 }
 
-.knap {
+button {
   width: 275px;
   margin-left:auto;
   margin-right: auto;
@@ -441,11 +441,10 @@ img {
   font-size: 20px;
   font-weight: var(--fw-reg);
   font-family: var(--ff-primary);
-}
-.button {
  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 /* kampagneknap */
 /* Afstemning */ 
 .wrapper
