@@ -214,6 +214,7 @@ color: var(--clr--background);
 font-size: 12px;
 padding: 8px 12px;
 top: 0;
+position: absolute;
 }
 
 /* The dots/bullets/indicators */
