@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;family=Oxygen:wght@700&amp;family=Roboto+Slab:wght@200;300;700&amp;display=swap" rel="style">
+    <script src="js/login.js" defer ></script>
 </head>
 <body>
 
@@ -24,13 +25,12 @@
   <img src="images/UCL_vertical.png" alt="ucl" style="width:150px"/>
   <form id="form" action="index.html" method="post"></form>
   <br/>
-  <input type="text" autofocus />
+  <input id="user" type="text" autofocus />
   <br/>
-  <input type="url" />
+  <input id="code" type="password" />
 <br/>
 
-  <a href="index.html"> <input id="login" type="submit" value="Sign in" /></a>
-</div>
+  <a onclick="sub()"> <input id="login" type="submit" value="Sign in" /></a>
 
 </body>
 </html>
