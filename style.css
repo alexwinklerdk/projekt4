@@ -160,8 +160,12 @@ a{
 
 }
 /* overskrifter */
+
+
+
 /* Galleri */
-* {box-sizing:border-box}
+*{box-sizing:border-box}
+.mySlides {display: none}
 
 /* Slideshow container */
 .slideshow-container {
@@ -441,8 +445,6 @@ button {
   font-size: 20px;
   font-weight: var(--fw-reg);
   font-family: var(--ff-primary);
- -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 /* kampagneknap */
