@@ -336,6 +336,7 @@ a{
   color: var(--clr--background);
   font-size: 12px;
   padding: 8px 12px;
+  position: absolute;
   top: 0;
 }
 
